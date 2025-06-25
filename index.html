@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً لطلبك | Thank You | Nasr Elsayed</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/7f78vJz/Graphicsfamily3.png">
+    <!-- Google Fonts: Using 'Cairo' for a modern Arabic look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* --- General Body and Background Styling --- */
+        body {
+            /* Using a high-quality, relevant background image */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            
+            font-family: 'Cairo', sans-serif;
+            color: #f0f0f0; /* Light text color for better contrast on dark background */
+            text-align: center;
+            
+            /* Using Flexbox to perfectly center the container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- Main Container with Frosted Glass Effect --- */
+        .container {
+            /* Frosted glass effect */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px); /* For Safari */
+            
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            
+            max-width: 650px;
+            width: 100%;
+            margin: auto;
+            position: relative;
+            
+            /* Smooth fade-in animation */
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* --- Keyframes for the fade-in animation --- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Logo Styling --- */
+        .logo {
+            max-width: 120px;
+            margin-bottom: 20px;
+            border-radius: 50%; /* Circular logo for a modern look */
+            background: #fff;
+            padding: 5px;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+        }
+
+        /* --- Typography --- */
+        h1 {
+            color: #FFCC00; /* Vibrant Gold/Yellow for headlines */
+            margin-bottom: 15px;
+            font-size: 2.2rem; /* Responsive font size */
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #e0e0e0;
+        }
+
+        /* --- Professional Button Styling --- */
+        .btn {
+            display: inline-flex; /* Use flex for easy icon alignment */
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between icon and text */
+            
+            margin-top: 15px;
+            padding: 15px 30px;
+            
+            color: #000;
+            background-color: #FFCC00; /* Primary call to action */
+            
+            text-decoration: none;
+            border-radius: 50px; /* Pill-shaped buttons */
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            
+            /* Smooth transition for hover effects */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #333;
+            transform: translateY(-3px) scale(1.05); /* Pop effect on hover */
+            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.4);
+        }
+        
+        /* --- Specific Button for WhatsApp --- */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: #fff;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            color: #fff;
+        }
+
+        /* --- Footer/Copyright Styling --- */
+        .footer {
+            font-size: 0.9rem;
+            margin-top: 35px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Using a placeholder for the logo which is better practice -->
+        <img src="https://i.ibb.co/7f78vJz/Graphicsfamily3.png" alt="شعار نصر السيد" class="logo" 
+        onerror="this.onerror=null;this.src='https://placehold.co/120x120/FFFFFF/FFCC00?text=Logo';">
+
+        <h1>🎉 شكراً لطلبك! | Thank you for your order!</h1>
+        <p>تم استلام طلبك بنجاح وسنبدأ في تنفيذه قريباً.<br>
+           Your request has been received and will be processed shortly.</p>
+
+        <p>نرجو منك تعبئة النموذج التالي لتحديد التفاصيل المطلوبة للمنيو الخاص بك :<br>
+           Please fill out the form below to provide your menu details:</p>
+
+        <!-- Button with icon -->
+        <a class="btn" href="https://forms.gle/kL9TbXgkcVtsxrCc6" target="_blank">
+            <i class="fas fa-file-alt"></i>
+            <span>تعبئة النموذج | Fill the Form</span>
+        </a>
+
+        <p style="margin-top: 30px; font-size: 1rem; color: #ccc;">
+            لأسئلة أو استفسارات إضافية تواصل معنا على واتساب:<br>
+            For further questions, contact us on WhatsApp:
+        </p>
+
+        <!-- WhatsApp Button with icon -->
+        <a href="https://wa.me/201030378038" class="btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>تواصل عبر واتساب | Chat on WhatsApp</span>
+        </a>
+
+        <div class="footer">© 2025 مصمم المنيوهات | Menu Designer - Nasr Elsayed</div>
+    </div>
+    
+</body>
+</html>
